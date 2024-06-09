@@ -18,7 +18,6 @@ body {
   background-color: #7c2178;
   background-image: linear-gradient(208deg, #7c2178 2%, #160444 37%);
   z-index: -1;
-  filter: blur(1px);
 }
 
 .content {
@@ -97,15 +96,6 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .header-icons {
-      display: none;
-  }
-  .mobile-menu {
-      display: flex;
-  }
-}
-
 .mobile-menu a {
   display: flex;
   justify-content: center;
@@ -128,61 +118,58 @@ body {
 
 @media (max-width: 768px) {
   .header-icons {
-    display: none; /* Hide header-icons on phones */
+    display: none;
   }
   .mobile-menu {
-    display: flex; /* Display mobile-menu as flex on phones */
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
-    justify-content: center; /* Center align icons */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .mobile-menu a {
-    margin: 8px; /* Add margin between icons */
+    margin: 8px;
   }
 }
 
-/* Hide mobile-menu on PCs */
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none; /* Hide mobile-menu on PCs */
+    display: none;
   }
 }
 
 #searchInput {
-  padding: 10px 5px 10px 10px; /* Adjust padding for input field */
-  border: 2px solid #30363d; /* Modify border properties */
-  border-radius: 20px; /* Apply border-radius for a rounded appearance */
-  background-color: #0b0f14; /* Set a darker background color */
-  color: #c9d1d9; /* Define text color */
-  font-size: 18px; /* Set font size */
+  padding: 10px 5px 10px 10px;
+  border: 2px solid #30363d;
+  border-radius: 20px;
+  background-color: #0b0f14;
+  color: #c9d1d9;
+  font-size: 18px;
   caret-color: #238636;
-  transition: padding 0.5s ease; /* Add transition for visual effect */
-  width: 100%; /* Ensure full width within the container */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: padding 0.5s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #searchInput:focus {
   padding: 10px 10px 11px 11px;
 }
 
-/* Style the search button */
 .search-box button {
-  padding: 11px; /* Adjust padding for the button */
-  border-radius: 20px; /* Apply border-radius for a rounded appearance */
-  background-color: #238636; /* Set a consistent color scheme */
-  color: white; /* Define text color */
-  font-size: 16px; /* Set font size */
-  transition: background-color 0.3s ease; /* Add transition for visual effect */
+  padding: 11px 9px 11px 9px;
+  border-radius: 20px;
+  background-color: #238636;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .search-box button:focus {
   padding: 11px 10px 11px 11px;
 }
 
-/* Ensure proper alignment and spacing */
 .search-box form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
-  gap: 10px; /* Add spacing between elements */
+  flex-wrap: wrap; 
+  gap: 10px;
 }
